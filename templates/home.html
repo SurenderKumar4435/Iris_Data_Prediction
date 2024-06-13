@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+        <h1>This is about Iris Data Prediction</h1>
+
+         
+            <form action="{{url_for('predict_datapoint')}}" method="post">
+                <input type="text" name="sepal_length" placeholder="sepal_length" required="required"  /><br>
+                <input type="text" name="sepal_width" placeholder="sepal_width" required="required"  /><br>
+                <input type="text" name="petal_length" placeholder="petal_length" required="required"  /><br>
+                <input type="text" name="petal_width" placeholder="petal_width" required="required"  /><br>
+               
+                
+                
+                
+    
+    
+                <button type="submit" class="btn-block btn-large">Predict</button>
+    
+            </form>
+         <h2>
+            species :{{result}}
+         </h2>
+         
+
+            
+        
+
+</body>
+</html>
